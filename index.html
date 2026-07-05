@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>République of Coffee | Premium Parisian Café</title>
+    <meta name="description" content="All-day brunch & specialty coffee in the heart of Paris.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-text">République of Coffee</div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Custom Cursor (optional, sleek touch) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="navbar">
+        <div class="logo">R<span class="dot">.</span>O<span class="dot">.</span>C</div>
+        <nav class="nav-links">
+            <a href="#home" class="nav-link" data-text="Home">Home</a>
+            <a href="#about" class="nav-link" data-text="L'Esprit">L'Esprit</a>
+            <a href="#menu" class="nav-link" data-text="Menu">Menu</a>
+            <a href="#gallery" class="nav-link" data-text="Gallery">Gallery</a>
+            <a href="#visit" class="nav-link" data-text="Visit Us">Visit Us</a>
+        </nav>
+        <button class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section with Parallax -->
+        <section class="hero" id="home">
+            <div class="hero-bg" data-speed="-0.5">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=80" alt="République of Coffee Exterior">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content reveal">
+                <p class="subtitle">Café & Brunch • Paris</p>
+                <h1 class="glitch" data-text="République of Coffee">République of Coffee</h1>
+                <p class="tagline">The Coziest Spot Near Bastille.</p>
+                <div class="scroll-indicator">
+                    <p>Scroll to Explore</p>
+                    <div class="mouse"><div class="wheel"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <span>All-Day Brunch &nbsp; • &nbsp; Specialty Coffee &nbsp; • &nbsp; Laptop Friendly &nbsp; • &nbsp; LGBTQ+ Friendly &nbsp; • &nbsp; Fresh Pastries &nbsp; • &nbsp;</span>
+                <span>All-Day Brunch &nbsp; • &nbsp; Specialty Coffee &nbsp; • &nbsp; Laptop Friendly &nbsp; • &nbsp; LGBTQ+ Friendly &nbsp; • &nbsp; Fresh Pastries &nbsp; • &nbsp;</span>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="img-frame">
+                            <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=800&q=80" alt="Brunch Spread">
+                        </div>
+                        <div class="floating-badge">Since 2017</div>
+                    </div>
+                    <div class="about-text reveal-right">
+                        <h2 class="section-title">A Taste of <br><span class="accent-text">Parisian Life</span></h2>
+                        <p class="lead">Loved by locals and tourists alike, we craft the perfect environment for your morning ritual or afternoon escape.</p>
+                        <p>Our coffee is carefully sourced and roasted to perfection. Paired with our vibrant all-day brunch menu, every visit becomes a memorable story. Whether you're catching up with friends or opening your laptop to work, you've found your spot.</p>
+                        <a href="#menu" class="btn-outline">Explore The Menu <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expanded Menu Section -->
+        <section class="menu section-padding" id="menu">
+            <div class="container">
+                <div class="text-center reveal-up">
+                    <h2 class="section-title">Curated Menu</h2>
+                    <p class="menu-subtitle">Average 10-20 € per person</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <!-- Brunch & Eats -->
+                    <div class="menu-category reveal-up delay-1">
+                        <h3><i class="fa-solid fa-utensils"></i> Brunch & Sweet</h3>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Fluffy Pancakes <span class="badge">Popular</span></span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">12 €</span>
+                            </div>
+                            <p class="item-desc">Served with premium maple syrup, fresh berries, and a pat of butter.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Healthy Fruit Bowl</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">11 €</span>
+                            </div>
+                            <p class="item-desc">Greek yogurt, homemade crunchy granola, chia seeds, and sliced bananas.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Avocado Toast</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">14 €</span>
+                            </div>
+                            <p class="item-desc">Sourdough bread, smashed avocado, chili flakes, and two poached eggs.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Eggs Benedict</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">15 €</span>
+                            </div>
+                            <p class="item-desc">English muffin, smoked salmon or bacon, hollandaise sauce.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">The Famous Brownie <span class="badge">Must Try</span></span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">6 €</span>
+                            </div>
+                            <p class="item-desc">Rich, gooey chocolate brownie baked fresh daily. Perfect with a latte.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Banana Bread</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">5 €</span>
+                            </div>
+                            <p class="item-desc">Toasted slice of our signature moist banana bread with walnuts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Coffee & Drinks -->
+                    <div class="menu-category reveal-up delay-2">
+                        <h3><i class="fa-solid fa-mug-hot"></i> Specialty Coffee</h3>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Café Latte</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">5 €</span>
+                            </div>
+                            <p class="item-desc">Smooth double espresso with steamed milk and intricate latte art.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Espresso</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">3 €</span>
+                            </div>
+                            <p class="item-desc">A rich, full-bodied single origin espresso shot.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cappuccino</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">4.50 €</span>
+                            </div>
+                            <p class="item-desc">Equal parts espresso, steamed milk, and thick foam. Dusted with cocoa.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Flat White</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">4.50 €</span>
+                            </div>
+                            <p class="item-desc">Double espresso with microfoamed milk for a velvety texture.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Matcha Latte <span class="badge green">New</span></span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">5.50 €</span>
+                            </div>
+                            <p class="item-desc">Ceremonial grade Japanese matcha blended with silky steamed milk.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Fresh Orange Juice</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">5 €</span>
+                            </div>
+                            <p class="item-desc">Squeezed to order every morning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Gallery Section -->
+        <section class="gallery section-padding bg-dark" id="gallery">
+            <div class="container">
+                <div class="text-center reveal-up">
+                    <h2 class="section-title text-light">Visual Stories</h2>
+                    <p class="lead text-light-muted">Follow us on Instagram @republiqueofcoffee</p>
+                </div>
+                
+                <!-- Masonry Layout -->
+                <div class="masonry-gallery reveal-up delay-1">
+                    <div class="masonry-item tall">
+                        <img src="https://images.unsplash.com/photo-1528207776546-384cb1119b76?auto=format&fit=crop&w=800&q=80" alt="Pancakes">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="masonry-item wide">
+                        <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=800&q=80" alt="Brunch Spread">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="masonry-item small">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Latte Art">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="masonry-item small">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Brownie">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="masonry-item wide">
+                        <img src="https://images.unsplash.com/photo-1490474418585-ba9f52fce1cb?auto=format&fit=crop&w=800&q=80" alt="Fruit Bowl">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glassmorphism Contact Section -->
+        <section class="visit" id="visit">
+            <div class="map-bg">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=80" alt="Location Background">
+            </div>
+            
+            <div class="container">
+                <div class="glass-card reveal-up">
+                    <h2 class="section-title">Join Us</h2>
+                    
+                    <div class="info-lists">
+                        <div class="info-group">
+                            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Find Us</h4>
+                                <p>2 Bd Saint-Martin<br>75010 Paris, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <div class="icon-box"><i class="fa-regular fa-clock"></i></div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Mon - Sun: 08:30 - 18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+33 9 83 35 38 13</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features-tags">
+                        <span class="tag"><i class="fa-solid fa-mug-saucer"></i> Repas sur place</span>
+                        <span class="tag"><i class="fa-solid fa-bag-shopping"></i> Vente à emporter</span>
+                        <span class="tag lgbtq"><i class="fa-solid fa-rainbow"></i> LGBTQ+ friendly</span>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/YzRAovVwEwtkMMSC6" target="_blank" class="btn-primary mt-4">
+                        <i class="fa-solid fa-map-location-dot"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <div class="footer-logo">République of Coffee</div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/republiqueofcoffee/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 République of Coffee. Developed with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
